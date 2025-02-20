@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my socials</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        .dark-mode {
+            background-color: rgb(24, 24, 37);
+            color: white;
+        }
+
+        .light-mode {
+            background-color: rgb(186, 194, 222);
+            color: black;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: rgb(24, 24, 37);
+                color: white;
+            }
+        }
+        /* unvisited link */
+        a:link {
+            color: rgb(108, 112, 134);
+        }
+
+        /* visited link */
+        a:visited {
+            color: rgb(108, 112, 134);
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: pink;
+        }
+        .bottom {
+            position: fixed;
+            bottom: 0;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function enableDarkMode() {
+            document.body.classList.add("dark-mode");
+            document.body.classList.remove("light-mode");
+            localStorage.setItem("theme", "dark");
+        }
+
+        function enableLightMode() {
+            document.body.classList.add("light-mode");
+            document.body.classList.remove("dark-mode");
+            localStorage.setItem("theme", "light");
+        }
+
+        function checkTheme() {
+            var theme = localStorage.getItem("theme");
+            if (theme === "dark") {
+                enableDarkMode();
+            } else {
+                enableLightMode();
+            }
+        }
+
+        checkTheme();
+    </script>
+</head>
+<body>
+    <button onclick="enableDarkMode()">🌙</button>
+    <button onclick="enableLightMode()">☀️</button><br><br>
+    <h1>👋</h1> yuriko here :3 <br><br>
+    
+<u>find me on:</u> <br>
+» <a href="https://reddit.com/u/thefrind54">reddit</a> «<br>
+» <a href="https://github.com/yurikodesu">github</a> «<br>
+» <a href="https://youtube.com/@yuriko54">youtube</a> «<br>
+» <a href="https://discordid.netlify.app/?id=947775206141870111">discord</a> «<br>
+<br>
+» <a href="https://anilist.co/user/yurikodesu/">anilist stats</a> «
+<br><br>
+something i made: <a href="https://tanpura-online.pages.dev/">https://tanpura-online.pages.dev/</a><br><br>
+<div class="bottom"><small>hosted with <a href="https://nekoweb.org">nekoweb.</a></small></div>
+<img src="https://static.wikia.nocookie.net/36f307f9-5896-4f3d-a545-7c00d17bdd37/scale-to-width/755" width="200">
+</body>
+</html>
