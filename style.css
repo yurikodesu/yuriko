@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(186, 194, 222);
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.dark-mode {
+    background-color: rgb(24, 24, 37);
+    color: white;
+}
+
+.light-mode {
+    background-color: rgb(186, 194, 222);
+    color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(24, 24, 37);
+        color: white;
+    }
+}
+/* unvisited link */
+a:link {
+    color: rgb(108, 112, 134);
+}
+
+/* visited link */
+a:visited {
+    color: rgb(108, 112, 134);
+}
+
+/* mouse over link */
+a:hover {
+    color: pink;
+}
+.bottom {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
