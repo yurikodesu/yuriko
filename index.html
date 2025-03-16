@@ -35,23 +35,30 @@
     </script>
 </head>
 <body>
-    <button onclick="enableDarkMode()">🌙</button>
-    <button onclick="enableLightMode()">☀️</button><br><br>
-    <h1>👋 Hi, I'm Yuriko!</h1>
-    <p>Your average 16 y/o guy who loves anime, music and tech. Addicted to waifus. Loves to read. <br>
-    <br>
-    I usually listen to Pop, Hip-Hop, J-Pop, Soul, R&B, and some other genres. <br>
-    </p>
+<button onclick="enableDarkMode()">🌙</button>
+<button onclick="enableLightMode()">☀️</button><br><br>
+<button onclick="document.getElementById('background-audio').play()">Play BGM</button>
+<button onclick="document.getElementById('background-audio').pause()">Pause BGM</button><br><br>
+<h1>Hi, I'm Yuriko! 👋</h1>
+<p>Your average 16 y/o guy from India who loves a little bit of trolling. Addicted to waifus. Loves to watch anime, mess with things and read.<br>
+
+</p>
     
 <u>Find me on:</u> <br>
 » <a href="https://reddit.com/u/thefrind54">Reddit</a> «<br>
 » <a href="https://github.com/yurikodesu">GitHub</a> «<br>
 » <a href="https://discordid.netlify.app/?id=947775206141870111">Discord</a> «<br>
-<br>
-» <a href="https://anilist.co/user/yurikodesu/">Anilist</a> «
+» <a href="https://anilist.co/user/yurikodesu/">Anilist</a> «<br>
+» <a href="https://x.com/yuriko_o_">X</a> «
 <br><br>
 Check out something I made: <a href="https://tanpura-online.pages.dev/">Tanpura Online</a><br><br>
-<img src="https://static.wikia.nocookie.net/36f307f9-5896-4f3d-a545-7c00d17bdd37/scale-to-width/755" width="200">
+Try guessing the BGM!<br><br>
+<img src="https://static.wikia.nocookie.net/36f307f9-5896-4f3d-a545-7c00d17bdd37/scale-to-width/755" width="200"><br>   
+<audio id="background-audio" loop>
+    <source src="tower_of_flower.mp3" type="audio/mpeg">
+    <source src="tower_of_flower.ogg" type="audio/ogg">
+    <source src="tower_of_flower.wav" type="audio/wav">
+</audio>
 <div class="bottom"><small>hosted with <a href="https://pages.cloudflare.com/">cloudflare pages.</a></small></div>
 </body>
 </html>
